@@ -13,5 +13,10 @@
 
 Route::get('/', function () {
     return view('welcome');
-    Route::get('hello','HelloController@index');
 });
+
+Route::get('hello','HelloController@hello');
+
+// Route::get('user/(id)/(name))', function ($index,$name){
+// 	return' tham so truyen vao ' . $index . '---' . $name;
+// });
